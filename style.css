@@ -3,6 +3,11 @@ body {
   justify-content: center;
   align-items: center;
   background-color: black;
+  text-align: center;
+}
+h1 {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 form {
   margin-top: 2rem;
@@ -47,7 +52,7 @@ form {
   font-weight: bold;
   color: hsla(0, 0%, 0%, 0.75);
 }
-.h1Style,
+.h2Style,
 .tempStyle,
 .humStyle {
   color: white;

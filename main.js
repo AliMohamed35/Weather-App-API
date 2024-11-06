@@ -47,16 +47,16 @@ function displayWeatherInfo(data) {
 
     console.log(data.main.temp)
 
-    const cityName = document.createElement('h1');
+    const cityName = document.createElement('h2');
     const cityTemp = document.createElement('p');
     const cityhumidity = document.createElement('p');
     const cityDesc = document.createElement('p');
     const weatherEmoji = document.createElement('p');
 
-    cityName.classList.add('h1Style')
+    cityName.classList.add('h2Style')
     cityTemp.classList.add('tempStyle')
     cityhumidity.classList.add('humStyle')
-    cityDesc.classList.add('h1Style')
+    cityDesc.classList.add('h2Style')
 
     cityName.textContent = city;
     cityTemp.textContent = `${(temp - 273.15).toFixed(1)}°C`;
