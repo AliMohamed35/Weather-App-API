@@ -1,0 +1,20 @@
+{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Weather App",
+    "url": "https://alimohamed35.github.io/Weather-App-API/",
+    "description": "A simple weather app that provides temperature, humidity, and weather description for any city.",
+    "applicationCategory": "Utility",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Ali Mohamed"
+    },
+    "image": "https://w7.pngwing.com/pngs/981/554/png-transparent-weather-forecasting-rain-weather-winter-text-weather-forecasting-thumbnail.png"
+  }
+  

@@ -101,3 +101,12 @@ function errorMessage(message) {
     card.style.display = "flex";
     card.appendChild(errorDisplay);
 }
+fetch('schema-data.json')
+    .then(response => response.json())
+    .then(data => {
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(data);
+        document.head.appendChild(script);
+    })
+    .catch(error => console.error('Error loading schema data:', error));
