@@ -2,14 +2,41 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 form {
   margin-top: 2rem;
+
+  input {
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+    padding: 12px;
+    box-shadow: 0px 5px 10px #00000069;
+
+    &:focus {
+      background-color: cadetblue;
+    }
+  }
+
+  button {
+    border-radius: 0px 4px 4px 0px;
+    border: none;
+    padding: 10px;
+    background-color: #1b9300;
+    box-shadow: 0px 5px 10px #00000069;
+    transition: 0.5s ease;
+    color: white;
+    font-size: 1rem;
+
+    &&:hover {
+      background-color: #1032ff;
+    }
+  }
 }
 .card {
-  background-color: cadetblue;
+  background-color: #486ec5;
   border-radius: 10px;
-  box-shadow: 0px 5px 10px;
+  box-shadow: 0px 5px 19px #0d9bff7a;
   max-width: 300px;
   text-align: center;
   padding: 20px;
@@ -19,4 +46,21 @@ form {
   font-size: 2rem;
   font-weight: bold;
   color: hsla(0, 0%, 0%, 0.75);
+}
+.h1Style,
+.tempStyle,
+.humStyle {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.h1Style {
+  letter-spacing: 1px;
+}
+.tempStyle {
+  font-size: 2rem;
+}
+.humStyle {
+  font-weight: bold;
+  color: black;
 }
